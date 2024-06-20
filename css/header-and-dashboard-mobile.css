@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+  
+    /* Dashboard Start */
+  
+    .dashboard span {
+      display: none;
+    }
+  
+    .dashboard p::before,
+    .dashboard p::after {
+      display: none;
+    }
+  
+    .dashboard p {
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+  
+    .dashboard {
+      padding: 0;
+    }
+  
+    .dashboard .links {
+      width: 80%;
+    }
+  
+    .dashboard .links li {
+      width: fit-content;
+      height: fit-content;
+    }
+  
+    /* Dashboard End */
+  
+    /* Header Start */
+  
+    header {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    header .profile {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    header input {
+      width: 75vw;
+    }
+  
+    header input:focus {
+      width: 75vw;
+    }
+  
+    /* Header End */
+  
+  }
