@@ -1,0 +1,215 @@
+@media (max-width: 768px) {
+  
+  /* Sidebar Start */
+  
+  .sidebar span {
+    display: none;
+  }
+
+  .sidebar p::before,
+  .sidebar p::after {
+    display: none;
+  }
+
+  .sidebar p {
+    font-size: 14px;
+  }
+
+  .sidebar {
+    padding: 20px 0;
+  }
+
+  .sidebar .links {
+    width: calc(100% - 10px);
+  }
+
+  .sidebar a {
+    justify-content: center;
+  }
+
+  /* Sidebar End */
+
+  /* Header Start */
+
+  header:has(:focus) {
+    flex-direction: column-reverse;
+  }
+
+  header input:focus {
+    width: 100% !important;
+  }
+
+  header:has(:focus) .profile {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Header End */
+
+  /* Welcome Start */
+
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .wrapper .welcome .intro > img {
+    display: none;
+  }
+
+  .wrapper .welcome .text img {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+  .wrapper .welcome  > .text p {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .wrapper .welcome > .text span {
+    font-size: 12px;
+  }
+
+  .wrapper > div {
+    height: fit-content;
+  }
+
+  .wrapper {
+    padding-top: 0 !important;
+  }
+
+  /* Welcome End */
+  
+  /* Quick Draft Start */
+  
+    .wrapper .quick-draft span {
+      font-size: 14px;
+    }
+  
+    .wrapper .quick-draft {
+      padding-bottom: 0;
+    }
+
+  /* Quick Draft End */
+
+  /* Yearly Targets Start */
+
+  .wrapper .yearly-targets .bar span {
+    font-size: 12px;
+    padding: 2px 0;
+    width: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    left: calc(80% - 15px);
+    top: -28px;
+  }
+
+  .wrapper .yearly-targets .bar span::before {
+    bottom: -13px;
+  }
+
+  .wrapper .yearly-targets .projects span {
+    left: calc(55% - 15px);
+  }
+
+  .wrapper .yearly-targets .team span {
+    left: calc(75% - 15px);
+  }
+
+  .wrapper .yearly-targets .targets {
+    margin-top: 12px;
+  }
+
+  /* Yearly Targets End */
+
+  /* Tickets Statistics Start */
+
+  .tickets-statistics .stat {
+    width: 100%;
+  }
+
+  .tickets-statistics h2 {
+    font-size: 22px;
+  }
+
+  .tickets-statistics > span {
+    font-size: 11.5px;
+    font-weight: 500;
+  }
+
+  /* Tickets Statistics End */
+
+  /* Latest News Start */
+
+  .latest-news .new {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .latest-news {
+    text-align: center;
+  }
+
+  .latest-news .time {
+    margin: 0 auto;
+  }
+
+  .latest-news .text span {
+    margin-top: 8px;
+  }
+
+  .latest-news .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Latest News End */
+
+  /* Latest Tasks Start */
+
+  .latest-tasks h3 {
+    font-size: 14px;
+  }
+
+  .latest-tasks span {
+    font-size: 13px;
+    width: 90%;
+    line-height: 1.5;
+  }
+
+  .latest-tasks .task.done span {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  /* Latest Tasks End */
+
+  /* Top Search Items Start */
+
+  .top-search-items h2 {
+    font-size: 18px;
+  }
+
+  .top-search-items .keyword:first-child span:last-child {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* Top Search Items End */
+
+  /* Latest Uploads Start */
+
+  
+
+  /* Latest Uploads End */
+
+}
