@@ -821,4 +821,78 @@ header .icon::before {
 
 /* Latest Uploads End */
 
+/* Last Project Progress Start */
+
+.last-project-progress li {
+  padding: 15px 0;
+  font-weight: 500;
+  position: relative;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.last-project-progress img {
+  bottom: 10px;
+  right: 10px;
+  opacity: .5;
+}
+
+.last-project-progress li::before {
+  content: "";
+  margin-right: 10px;
+  width: 20px;
+  left: 0;
+  position: absolute;
+  height: 20px;
+  border: 2px solid white;
+  background-color: var(--blue-color);
+  outline: 2px solid var(--blue-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 2;
+}
+
+.last-project-progress li:not(:last-child)::after {
+  content: "";
+  height: 40px;
+  width: 2px;
+  background-color: var(--blue-color);
+  position: absolute;
+  left: 11px;
+  bottom: -20px;
+}
+
+.last-project-progress li:last-child::before {
+  background-color: white;
+}
+
+.last-project-progress li:nth-last-child(2)::before {
+  animation: change-color 1s infinite alternate;
+  -webkit-animation: change-color 1s infinite alternate;
+}
+
+.wrapper h2 {
+  font-weight: 600;
+}
+
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+
+  to {
+    background-color: white;
+  }
+}
+
+.last-project-progress img {
+  width: 150px;
+}
+
+/* Last Project Progress End */
+
 /* Wrapper End */

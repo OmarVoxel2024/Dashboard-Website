@@ -238,4 +238,32 @@
 
   /* Latest Uploads End */
 
+  /* Last Project Progress Start */
+
+  .last-project-progress li {
+    padding-left: 35px;
+    line-height: 1.2;
+  }
+
+  .last-project-progress li::before {
+    width:  18px;
+    height: 18px;
+  }
+
+  .last-project-progress h2 {
+    font-size: 18px;
+  }
+
+  .last-project-progress li:not(:last-child)::after {
+    left: 10px;
+    height: 50px;
+    bottom: -25px;
+  }
+
+  .last-project-progress img {
+    display: none;
+  }
+
+  /* Last Project Progress End */
+
 }
