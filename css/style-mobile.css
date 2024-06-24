@@ -208,7 +208,33 @@
 
   /* Latest Uploads Start */
 
-  
+  .latest-uploads .upload {
+    gap: 5px;
+  }
+
+  .latest-uploads .text p,
+  .latest-uploads .text span {
+    font-size: 14px;
+  }
+
+  .latest-uploads .upload .text {
+    min-width: 100px;
+  }
+
+  .latest-uploads .upload:nth-child(2) p,
+  .latest-uploads .upload:nth-child(3) p,
+  .latest-uploads .upload:last-child p {
+    font-size: 13px;
+    width: 105px;
+  }
+
+  .latest-uploads {
+    padding: 20px 10px !important;
+  }
+
+  .latest-uploads .upload:nth-child(2) .size {
+    font-size: 12px;
+  }
 
   /* Latest Uploads End */
 

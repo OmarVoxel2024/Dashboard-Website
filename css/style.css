@@ -774,4 +774,51 @@ header .icon::before {
 
 /* Top Search Items End */
 
+/* Latest Uploads Start */
+
+.latest-uploads img {
+  width: 40px;
+}
+
+.latest-uploads .upload {
+  padding: 20px 0;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.latest-uploads .file-name {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.latest-uploads .uploads {
+  margin-top: 15px;
+}
+
+.latest-uploads .size {
+  margin-left: auto;
+  font-size: 14px;
+  color: white;
+  padding: 4px 8px;
+  background-color: #eee;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  color: initial !important;
+}
+
+.latest-uploads .upload:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.latest-uploads span {
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+/* Latest Uploads End */
+
 /* Wrapper End */
