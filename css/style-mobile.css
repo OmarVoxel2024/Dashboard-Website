@@ -65,6 +65,10 @@
     -o-transform: translateX(-50%);
 }
 
+.wrapper h2 {
+  font-size: 20px;
+}
+
   .wrapper .welcome  > .text p {
     font-size: 13px;
     font-weight: bold;
@@ -204,6 +208,10 @@
     font-weight: 600;
   }
 
+  .keyword:last-child {
+    font-size: 14px;
+  }
+
   /* Top Search Items End */
 
   /* Latest Uploads Start */
@@ -265,5 +273,48 @@
   }
 
   /* Last Project Progress End */
+
+  /* Reminders Start */
+
+  .reminders .reminder:last-child p {
+    font-size: 12px;
+    width: 200px;
+    line-height: 1.2;
+  }
+
+  /* Reminders End */
+
+  /* Latest Post Start */
+
+  .latest-post p.text {
+    font-size: 12px;
+  }
+
+  /* Latest Post End */
+
+  /* Social Media Stats Start */
+
+  .social-media-stats p.text {
+    font-size: 12px;
+  }
+
+  .social-media-stats i {
+    max-width: 40px;
+    max-height: 40px;
+    font-size: 25px;
+  }
+
+  .social-media-stats a {
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin-right: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+  /* Social Media Stats End */
 
 }
