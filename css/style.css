@@ -964,6 +964,10 @@ h2 {
   border: 1px solid #eee;
 }
 
+.projects td:first-child {
+  text-align: left;
+}
+
 .projects tr {
   transition: .5s;
   -webkit-transition: .5s;
