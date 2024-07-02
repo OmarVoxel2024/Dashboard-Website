@@ -1,45 +1,49 @@
 @media (max-width: 768px) {
-  
   /* Sidebar Start */
-  
+
   .sidebar span {
     display: none;
   }
 
+  .sidebar li {
+    justify-content: center;
+    height: 40px;
+    width: 40px !important;
+  }
+
   .sidebar p::before,
   .sidebar p::after {
-    display: none;
-  }
-
-  .sidebar p {
-    font-size: 14px;
-  }
-
-  .sidebar {
-    padding: 20px 0;
-  }
-
-  .sidebar .links {
-    width: calc(100% - 10px);
-  }
-
-  .sidebar a {
-    justify-content: center;
+    content: none;
   }
 
   /* Sidebar End */
 
+  /* Dashboard Start */
+
+  .wrapper {
+    grid-template-columns: calc(84vw - 40px);
+  }
+
+  /* Dashboard End */
+
   /* Header Start */
+
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   header:has(:focus) {
     flex-direction: column-reverse;
+    height: fit-content;
+    padding: 10px;
   }
 
-  header input:focus {
-    width: 100% !important;
+  header:has(:focus) .search {
+    width: 102%;
   }
 
-  header:has(:focus) .profile {
+  header:has(:focus) .avatar-profile {
     justify-content: space-between;
     width: 100%;
   }
@@ -48,104 +52,48 @@
 
   /* Welcome Start */
 
-  .wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
-
-  .wrapper .welcome .intro > img {
+  .welcome .intro img:not(:last-child) {
     display: none;
   }
 
-  .wrapper .welcome .text img {
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-}
-
-.wrapper h2 {
-  font-size: 20px;
-}
-
-  .wrapper .welcome  > .text p {
-    font-size: 13px;
-    font-weight: bold;
+  .welcome .intro {
+    text-align: center;
+    justify-content: center;
   }
 
-  .wrapper .welcome > .text span {
-    font-size: 12px;
-  }
-
-  .wrapper > div {
-    height: fit-content;
-  }
-
-  .wrapper {
-    padding-top: 0 !important;
+  .welcome .intro img:last-child {
+    left: 10px;
   }
 
   /* Welcome End */
-  
-  /* Quick Draft Start */
-  
-    .wrapper .quick-draft span {
-      font-size: 14px;
-    }
-  
-    .wrapper .quick-draft {
-      padding-bottom: 0;
-    }
 
-  /* Quick Draft End */
+  .wrapper h2 {
+    font-size: 18px;
+  }
 
   /* Yearly Targets Start */
 
-  .wrapper .yearly-targets .bar span {
+  .yearly-targets i {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+  .yearly-targets .bar span {
     font-size: 12px;
-    padding: 2px 0;
-    width: 30px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    left: calc(80% - 15px);
-    top: -28px;
-  }
-
-  .wrapper .yearly-targets .bar span::before {
-    bottom: -13px;
-  }
-
-  .wrapper .yearly-targets .projects span {
-    left: calc(55% - 15px);
-  }
-
-  .wrapper .yearly-targets .team span {
-    left: calc(75% - 15px);
-  }
-
-  .wrapper .yearly-targets .targets {
-    margin-top: 12px;
   }
 
   /* Yearly Targets End */
 
   /* Tickets Statistics Start */
 
+  .tickets-statistics .stat p {
+    font-size: 20px;
+  }
+
   .tickets-statistics .stat {
-    width: 100%;
-  }
-
-  .tickets-statistics h2 {
-    font-size: 22px;
-  }
-
-  .tickets-statistics > span {
-    font-size: 11.5px;
-    font-weight: 500;
+    padding: 10px 0;
   }
 
   /* Tickets Statistics End */
@@ -153,62 +101,29 @@
   /* Latest News Start */
 
   .latest-news .new {
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .latest-news {
+    flex-direction: column;
     text-align: center;
   }
 
   .latest-news .time {
-    margin: 0 auto;
-  }
-
-  .latest-news .text span {
-    margin-top: 8px;
-  }
-
-  .latest-news .image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin-left: initial;
   }
 
   /* Latest News End */
 
   /* Latest Tasks Start */
 
-  .latest-tasks h3 {
-    font-size: 14px;
-  }
-
+  .latest-tasks p,
   .latest-tasks span {
-    font-size: 13px;
-    width: 90%;
+    font-size: 14px;
     line-height: 1.5;
-  }
-
-  .latest-tasks .task.done span {
-    width: 100%;
-    font-size: 12px;
   }
 
   /* Latest Tasks End */
 
   /* Top Search Items Start */
 
-  .top-search-items h2 {
-    font-size: 18px;
-  }
-
   .top-search-items .keyword:first-child span:last-child {
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  .keyword:last-child {
     font-size: 14px;
   }
 
@@ -216,105 +131,97 @@
 
   /* Latest Uploads Start */
 
-  .latest-uploads .upload {
-    gap: 5px;
-  }
-
-  .latest-uploads .text p,
-  .latest-uploads .text span {
+  .latest-uploads .text p {
     font-size: 14px;
+    width: 111px;
   }
 
-  .latest-uploads .upload .text {
-    min-width: 100px;
-  }
-
-  .latest-uploads .upload:nth-child(2) p,
-  .latest-uploads .upload:nth-child(3) p,
-  .latest-uploads .upload:last-child p {
-    font-size: 13px;
-    width: 105px;
-  }
-
-  .latest-uploads {
-    padding: 20px 10px !important;
-  }
-
-  .latest-uploads .upload:nth-child(2) .size {
-    font-size: 12px;
-  }
+  .latest-uploads .size {
+    font-size: 11px;
+    padding: 3px;
+    transform: translate(-10px, 2px);
+    -webkit-transform: translate(-10px, 2px);
+    -moz-transform: translate(-10px, 2px);
+    -ms-transform: translate(-10px, 2px);
+    -o-transform: translate(-10px, 2px);
+}
 
   /* Latest Uploads End */
 
   /* Last Project Progress Start */
 
-  .last-project-progress li {
-    padding-left: 35px;
+  .last-project-progress .progress {
+    font-size: 14px;
+    width: 100%;
     line-height: 1.2;
-  }
-
-  .last-project-progress li::before {
-    width:  18px;
-    height: 18px;
-  }
-
-  .last-project-progress h2 {
-    font-size: 18px;
-  }
-
-  .last-project-progress li:not(:last-child)::after {
-    left: 10px;
-    height: 50px;
-    bottom: -25px;
-  }
-
-  .last-project-progress img {
-    display: none;
   }
 
   /* Last Project Progress End */
 
   /* Reminders Start */
 
-  .reminders .reminder:last-child p {
-    font-size: 12px;
-    width: 200px;
-    line-height: 1.2;
+  .reminder:last-child p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   /* Reminders End */
 
-  /* Latest Post Start */
-
-  .latest-post p.text {
-    font-size: 12px;
-  }
-
-  /* Latest Post End */
-
   /* Social Media Stats Start */
 
-  .social-media-stats p.text {
-    font-size: 12px;
+  .social-media-stats p {
+    font-size: 13px;
   }
 
-  .social-media-stats i {
-    max-width: 40px;
-    max-height: 40px;
-    font-size: 25px;
+  .social-media-stats .stat {
+    gap: 8px;
   }
 
   .social-media-stats a {
-    font-size: 12px;
-    padding: 2px 4px;
-    border-radius: 3px;
-    margin-right: 5px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-}
+    margin-right: 8px;
+    font-size: 10px;
+  }
+
+  .social-media-stats i {
+    min-width: 40px !important;
+    font-size: 18px;
+    min-height: 40px !important;
+  }
 
   /* Social Media Stats End */
+
+  /* Projects Start */
+
+  .projects td {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 10px;
+  }
+
+  .projects th {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .projects .images {
+    transform: translateX(6.5px);
+    -webkit-transform: translateX(6.5px);
+    -moz-transform: translateX(6.5px);
+    -ms-transform: translateX(6.5px);
+    -o-transform: translateX(6.5px);
+}
+
+  .projects td:last-child span {
+    width: 70px;
+  }
+
+  .projects img {
+    width: 24px;
+    height: 24px;
+    border-width: 2px;
+    margin-left: -13px;
+  }
+
+  /* Projects End */
 
 }
