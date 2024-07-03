@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-mobile.css">
+    <!-- Framework -->
+    <link rel="stylesheet" href="../css/my-new-framework.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page">
+
+      <!-- Sidebar Start -->
+      
+      <div class="sidebar p-12 sm:p-5 md:p-8 bg-white ps-f top-0 left-0 ds-flex flex-column center-y-flex">
+        <p class="fw-b sm:fa-14 sm:mt-5 sm:mb-10 ps-rel fa-20 mb-20">Omar</p>
+        <ul class="links center-y-flex mt-20 sm:fa-16 sm:mt-10 md:fa-14 w-full d-flex gap-8 flex-column pl-0 ls-none">
+          <li>
+            <a href="../index.html">
+              <i class="fa-solid fa-chart-simple fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" class="active">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sidebar End -->
+    
+      <!-- Content Start -->
+
+      <div class="content ml-auto">
+
+        <!-- Header Start -->
+
+        <header class="bg-white gap-10 w-full d-flex space-between center-y-flex">
+          <div class="search ps-rel d-flex center-y-flex rad-8 sm:rad-6 p-5 pl-20">
+            <input type="text" placeholder="Search A Keyword" class="outl-none w-full sm:fa-12 fa-14 ml-10">
+          </div>
+          <div class="avatar-profile ds-flex gap-12 center-y-flex">
+            <div class="icon ps-rel">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </div>
+            <img src="../images/avatar.png" alt="avatar-img">
+          </div>
+        </header>
+
+        <!-- Header End -->
+
+        <!-- Profile Page Start -->
+
+        <h1 class="m-20">Profile</h1>
+        <div class="wrapper ml-20 mr-20">
+
+          <!-- Overview Start -->
+          
+          <div class="overview mb-20 sm:flex-column sm:center-y-flex d-flex p-0 rad-6">
+            <div class="person pl-20 pr-20 d-flex flex-column center-flex gap-10">
+              <img src="../images/avatar.png" alt="avatar-img">
+              <p class="fw-b fa-22">Omar Shehta</p>
+              <span>Level <span class="c-blue">99</span>+</span>
+              <div class="level-bar ps-rel"></div>
+              <div class="stars d-flex gap-5">
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+                <i class="fa-solid fa-star c-orange fs-13"></i>
+              </div>
+              <span class="rating">550 Rating</span>
+            </div>
+            <div class="infos ps-rel">
+              <div class="info general">
+                <p>General Information</p>
+                <div class="text">
+                  <p class="name"><span>Full Name</span> Omar Shehta</p>
+                  <p class="gender"><span>Gender</span> Male</p>
+                  <p class="country"><span>Country</span> Egypt</p>
+                </div>
+                <div class="custom-checkbox">
+                  <input type="checkbox" checked>
+                </div>
+              </div>
+              <div class="info personal">
+                <p>Personal Information</p>
+                <div class="text">
+                  <p class="email"><span>Email</span> o@nn.eg</p>
+                  <p class="phone"><span>Phone</span> +201234567890</p>
+                  <p class="birth-date"><span>Date Of Birth</span> 23/02/2010</p>
+                </div>
+                <div class="custom-checkbox">
+                  <input type="checkbox">
+                </div>
+              </div>
+              <div class="info job">
+                <p>Job Information</p>
+                <div class="text">
+                  <p class="title"><span>Title</span> Frontend Developer</p>
+                  <p class="programming-language sm:fa-12"><span>Programming Language</span> Javascript</p>
+                  <p class="years-of-experience"><span>Years Of Experience</span> 1+</p>
+                </div>
+                <div class="custom-checkbox">
+                  <input type="checkbox" checked>
+                </div>
+              </div>
+              <div class="info billing">
+                <p>Billing Information</p>
+                <div class="text">
+                  <p class="payment-method"><span>Payment Method</span> Paypal</p>
+                  <p class="email"><span>Email</span> email@website.com</p>
+                  <p class="subscription"><span>Subscription</span> Monthly</p>
+                </div>
+                <div class="custom-checkbox">
+                  <input type="checkbox">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Overview End -->
+
+          <!-- Other Data Start -->
+
+          <div class="other-data pb-20">
+
+            <!-- My Skills Start -->
+            
+            <div class="my-skills pb-0">
+              <h2>My Skills</h2>
+              <span>Complete Skills List</span>
+              <div class="skills">
+                <div class="skills-set">
+                  <span>HTML</span>
+                  <span>Pug.js</span>
+                  <span>HAML</span>
+                </div>
+                <div class="skills-set">
+                  <span>CSS</span>
+                  <span>SASS</span>
+                  <span>Stylus</span>
+                </div>
+                <div class="skills-set">
+                  <span>JavaScript</span>
+                  <span>TypeScript</span>
+                </div>
+                <div class="skills-set">
+                  <span>Vue.js</span>
+                  <span>React.js</span>
+                </div>
+                <div class="skills-set">
+                  <span>Jest</span>
+                  <span>Jasmine</span>
+                </div>
+                <div class="skills-set">
+                  <span>PHP</span>
+                  <span>Laravel</span>
+                </div>
+                <div class="skills-set">
+                  <span>Python</span>
+                  <span>Django</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- My Skills End -->
+            
+            <!-- Latest Activities Start -->
+
+            <div class="latest-activities sm:p-12">
+              <h2>Latest Activities</h2>
+              <span>Latest Activities Done By Users</span>
+              <div class="activities">
+                <div class="activity">
+                  <img src="../images/activity-01.png" alt="activity-img">
+                  <div class="text">
+                    <p>Store</p>
+                    <span>Bought The Mastering Python Course</span>
+                  </div>
+                  <div class="time">
+                    <p class="hour">6:12pm</p>
+                    <p class="day">Yesterday</p>
+                  </div>
+                </div>
+                <div class="activity">
+                  <img src="../images/activity-02.png" alt="activity-img">
+                  <div class="text">
+                    <p>Academy</p>
+                    <span>Got The PHP Certificate</span>
+                  </div>
+                  <div class="time">
+                    <p class="hour">4:05pm</p>
+                    <p class="day">Yesterday</p>
+                  </div>
+                </div>
+                <div class="activity">
+                  <img src="../images/activity-03.png" alt="activity-img">
+                  <div class="text">
+                    <p>Badges</p>
+                    <span>Unlocked The 10 Skills Badge</span>
+                  </div>
+                  <div class="time">
+                    <p class="hour">1:37pm</p>
+                    <p class="day">Yesterday</p>
+                  </div>
+                </div>
+                <div class="activity">
+                  <img src="../images/activity-01.png" alt="activity-img">
+                  <div class="text">
+                    <p>Store</p>
+                    <span>Bought The Typescript Course</span>
+                  </div>
+                  <div class="time">
+                    <p class="hour">11:47am</p>
+                    <p class="day">Yesterday</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Latest Activities End -->
+
+          </div>
+          
+          <!-- Other Data End -->
+
+        </div>
+
+        <!-- Profile Page End -->
+
+      </div>
+
+      <!-- Content End -->
+
+    </div>
+  </body>
+</html>

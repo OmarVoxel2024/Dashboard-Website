@@ -224,4 +224,110 @@
 
   /* Projects End */
 
+  /* Settings Page Start */
+
+  /* General Info Start */
+
+  .general-info input:disabled {
+    width: calc(100% - 63px);
+    margin-right: 8px;
+  }
+
+  /* General Info End */
+
+  /* Security Info Start */
+
+  .security-info span {
+    font-size: 12px;
+  }
+
+  .security-info p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .security-info .text {
+    gap: 4px;
+  }
+
+  /* Security Info End */
+
+  /* Backup Manager Start */
+
+  .backup-manager .plan-radio {
+    width: 100%;
+  }
+
+  /* Backup Manager End */
+
+  /* Settings Page End */
+
+  /* Profile Page Start */
+
+  /* Overview Start */
+
+  .overview .text p {
+    position: static;
+  }
+
+  .overview .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  .overview .custom-checkbox {
+    margin: -7.5px 0;
+  }
+
+  .overview .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overview .info.job .text p:nth-child(2) {
+    line-height: 1.2;
+    width: 300px;
+    margin-top: -2.5px;
+  }
+
+  /* Overview End */
+
+  /* My Skills Start */
+
+  .my-skills .skills-set {
+    justify-content: center;
+  }
+
+  /* My Skills End */
+
+  /* Latest Activities Start */
+
+  .latest-activities .activity {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .latest-activities .text span {
+    font-size: 12px;
+    margin: -3px 0;
+  }
+
+  .latest-activities .time {
+    margin-left: 0 !important;
+    gap: 3px !important;
+    font-size: 14px;
+    margin-top: -3px;
+  }
+
+  /* Latest Activities End */
+
+  /* Profile Page End */
+
 }
