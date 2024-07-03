@@ -82,7 +82,13 @@
 
   .yearly-targets .bar span {
     font-size: 12px;
-  }
+    top: -18px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
 
   /* Yearly Targets End */
 
@@ -329,5 +335,46 @@
   /* Latest Activities End */
 
   /* Profile Page End */
+
+  /* Projects Page Start */
+
+  .project {
+    padding: 12px !important;
+  }
+
+  .project .text p {
+    font-size: 14px;
+  }
+
+  .project .text span {
+    font-size: 12px;
+    width: 201px;
+    line-height: 1.2;
+    margin-top: -5px;
+  }
+
+  .project .date {
+    transform: translateX(-60px);
+    -webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    -ms-transform: translateX(-60px);
+    -o-transform: translateX(-60px);
+}
+
+  .project .titles span {
+    font-size: 9px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+  .project .titles {
+    gap: 3px;
+  }
+
+  /* Projects Page End */
 
 }

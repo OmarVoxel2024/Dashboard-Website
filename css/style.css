@@ -363,130 +363,143 @@ h2 {
 
 /* Yearly Targets Start */
 
-.yearly-targets .target {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+.yearly-targets .target-bar {
+  width: 100%;
 }
 
 .yearly-targets i {
-  color: var(--blue-color);
-  background-color: #0075ff33;
-  width: 80px;
+  min-width: 80px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.yearly-targets .projects i {
-  color: var(--orange-color);
+.yearly-targets .money i {
+  background-color: #0075ff33;
+}
+
+.yearly-targets .projectsss i {
   background-color: #f59e0b33;
 }
 
 .yearly-targets .team i {
-  color: var(--green-color);
   background-color: #22c55e33;
 }
 
+.yearly-targets .target,
+.yearly-targets .targetss {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .yearly-targets .target-bar {
-  width: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.yearly-targets p {
+  font-weight: bold;
 }
 
 .yearly-targets .bar {
   width: 100%;
-  background-color: #0075ff33;
-  position: relative;
   height: 3px;
+  position: relative;
 }
 
-.yearly-targets .bar::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 80%;
-  background-color: var(--blue-color);
+.yearly-targets .money .bar {
+  background-color: #0075ff33;
 }
 
-.yearly-targets .projects .bar {
+.yearly-targets .projectsss .bar {
   background-color: #f59e0b33;
-}
-
-.yearly-targets .projects .bar::before {
-  background-color: var(--orange-color);
-  width: 55%;
 }
 
 .yearly-targets .team .bar {
   background-color: #22c55e33;
 }
 
+.yearly-targets .bar::before {
+  content: "";
+  height: inherit;
+  width: 80%;
+  background-color: var(--blue-color);
+  position: absolute;
+}
+
+.yearly-targets .projectsss .bar::before {
+  width: 55%;
+  background-color: var(--orange-color);
+}
+
 .yearly-targets .team .bar::before {
-  background-color: var(--green-color);
   width: 75%;
+  background-color: var(--green-color);
 }
 
 .yearly-targets .bar span {
   position: absolute;
-  background-color: var(--blue-color);
-  color: white;
+  padding: 2px 4px;
   left: 80%;
-  transform: translate(-50%, calc(-100% - 10px));
-  padding: 3px 5px;
+  top: -20px;
   display: flex;
   justify-content: center;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  -webkit-transform: translate(-50%, calc(-100% - 10px));
-  -moz-transform: translate(-50%, calc(-100% - 10px));
-  -ms-transform: translate(-50%, calc(-100% - 10px));
-  -o-transform: translate(-50%, calc(-100% - 10px));
+  align-items: center;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  color: white;
+  background-color: var(--blue-color);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.yearly-targets .projectsss span {
+  left: 55%;
+}
+
+.yearly-targets .team span {
+  left: 75%;
 }
 
 .yearly-targets .bar span::before {
   content: "";
   position: absolute;
   left: 50%;
-  top: 100%;
-  border: 5px solid transparent;
-  border-top-color: var(--blue-color);
+  bottom: -14px;
+  z-index: -1;
   transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-top-color: var(--blue-color);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
 
-.yearly-targets .projects .bar span {
-  left: 55%;
-  background-color: var(--orange-color);
-}
-
-.yearly-targets .projects .bar span::before {
+.yearly-targets .projectsss span::before {
   border-top-color: var(--orange-color);
 }
 
-.yearly-targets .team .bar span {
-  left: 75%;
-  background-color: var(--green-color);
-}
-
-.yearly-targets .team .bar span::before {
+.yearly-targets .team span::before {
   border-top-color: var(--green-color);
 }
 
-.yearly-targets .target-bar {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.yearly-targets .projectsss .bar span {
+  background-color: var(--orange-color);
 }
 
-.yearly-targets p {
-  font-weight: bold;
+.yearly-targets .team .bar span {
+  background-color: var(--green-color);
 }
 
 /* Yearly Targets End */
@@ -1708,3 +1721,166 @@ h2 {
 /* Latest Activities End */
 
 /* Profile Page End */
+
+/* Projects Page Start */
+
+.project {
+  padding-bottom: 8px !important;
+}
+
+.project p {
+  font-weight: 500;
+}
+
+.project .title-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project .team {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-left: 17px;
+}
+
+.project img {
+  position: relative;
+  min-width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  margin-left: -20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.project .titles {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.project .titles span {
+  background-color: #eee;
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.project img:hover {
+  z-index: 3;
+  cursor: pointer;
+}
+
+.project .price-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.project .text span {
+  font-size: 13px;
+}
+
+.project .price-bar .bar {
+  width: 50%;
+  background-color: #eee;
+  position: relative;
+  height: 9px;
+  border-radius: 9px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.project .price-bar .bar::before {
+  content: "";
+  height: inherit;
+  width: 80%;
+  position: absolute;
+  border-radius: 8px;
+  background-color: var(--green-color);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.project .price-bar .bar.red::before {
+  background-color: var(--red-color);
+}
+
+.project .price-bar .bar.blue::before {
+  background-color: var(--blue-color);
+}
+
+.project:first-child .bar::before {
+  width: 50%;
+}
+
+.project:nth-child(3) .bar::before {
+  width: 100%;
+}
+
+.project:nth-child(4) .bar::before {
+  width: 65%;
+}
+
+.project .bar.w40::before {
+  width: 40%;
+}
+
+.project .bar.w50::before {
+  width: 50%;
+}
+
+.project .bar.w60::before {
+  width: 60%;
+}
+
+.project .bar.w65::before {
+  width: 65%;
+}
+
+.project .bar.w70::before {
+  width: 70%;
+}
+
+.project .bar.w80::before {
+  width: 80%;
+}
+
+.project .bar.w90::before {
+  width: 90%;
+}
+
+.project .bar.wf::before {
+  width: 100%;
+}
+
+.project .price {
+  font-size: 14px;
+}
+
+.project .date {
+  font-size: 13px;
+}
+
+/* Projects Page End */
