@@ -16,6 +16,12 @@
     content: none;
   }
 
+  .sidebar a {
+    display: flex;
+    justify-content: center;
+
+  }
+
   /* Sidebar End */
 
   /* Dashboard Start */
@@ -204,9 +210,23 @@
     padding: 10px;
   }
 
+  .projects td:first-child {
+    min-width: 110px;
+    text-align: center !important;
+  }
+
+  .projects td:last-child span {
+    font-size: 10px;
+  }
+
   .projects th {
     font-size: 12px;
+    min-width: 90px !important;
     padding: 10px;
+  }
+
+  .projects .table {
+    padding-bottom: 10px;
   }
 
   .projects .images {
@@ -274,6 +294,10 @@
 
   .overview .text p {
     position: static;
+  }
+
+  .overview {
+    padding-top: 20px !important;
   }
 
   .overview .text {
@@ -354,11 +378,12 @@
   }
 
   .project .date {
-    transform: translateX(-60px);
-    -webkit-transform: translateX(-60px);
-    -moz-transform: translateX(-60px);
-    -ms-transform: translateX(-60px);
-    -o-transform: translateX(-60px);
+    font-size: 10px;
+    transform: translate(-45px, -5px);
+    -webkit-transform: translate(-45px, -5px);
+    -moz-transform: translate(-45px, -5px);
+    -ms-transform: translate(-45px, -5px);
+    -o-transform: translate(-45px, -5px);
 }
 
   .project .titles span {
@@ -376,5 +401,78 @@
   }
 
   /* Projects Page End */
+
+  /* Courses Page Start */
+
+  .courses img.main-img {
+    max-height: 200px
+  }
+
+  .courses .info {
+    padding: 12px;
+  }
+
+  .courses .info > span {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .courses .price-people {
+    font-size: 12px;
+  }
+
+  .courses h2 {
+    font-size: 14px;
+    width: 120%;
+  }
+
+  /* Courses Page End */
+
+  /* Friends Page Start */
+
+  .friend .info {
+    font-size: 10px;
+  }
+
+  .friend .info a {
+    padding: 2px 4px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+  .friend .info .buttons {
+    display: flex;
+    gap: 3px;
+  }
+
+  /* Friends Page End */
+
+  /* Files Page Start */
+
+  .wrapper:has(.files-statistics) {
+    flex-wrap: wrap;
+  }
+
+  .files {
+    width: 100%;
+  }
+
+  .files-statistics {
+    width: 100%;
+    order: -1;
+  }
+
+  /* Files Page End */
+
+  /* Plans Page Start */
+
+  .plan {
+    flex-basis: 100%;
+  }
+
+  /* Plans Page End */
 
 }
